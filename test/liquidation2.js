@@ -83,7 +83,7 @@ describe("Question2: Liquidation in 2000,5000,10000 USDT", function () {
     expect(profit.gt(BigNumber.from(0)), "not profitable").to.be.true;
   });
   it("TEST 5,000 USDT", async function (input = "5000") {
-    console.log("\nLiquidation 2,000 USDT");
+    console.log("\nLiquidation 5,000 USDT");
     await network.provider.request({
       method: "hardhat_reset",
       params: [
