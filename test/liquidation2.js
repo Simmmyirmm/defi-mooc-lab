@@ -5,7 +5,7 @@ const { writeFile } = require("fs");
 
 describe("Question2: Liquidation in 2000,5000,10000 USDT", function () {
   it("TEST 2,000 USDT", async function (input = "2000") {
-    // console.log(process.env.ALCHE_API)
+    console.log("\nLiquidation 2,000 USDT");
     await network.provider.request({
       method: "hardhat_reset",
       params: [
@@ -83,7 +83,7 @@ describe("Question2: Liquidation in 2000,5000,10000 USDT", function () {
     expect(profit.gt(BigNumber.from(0)), "not profitable").to.be.true;
   });
   it("TEST 5,000 USDT", async function (input = "5000") {
-    // console.log(process.env.ALCHE_API)
+    console.log("\nLiquidation 2,000 USDT");
     await network.provider.request({
       method: "hardhat_reset",
       params: [
@@ -161,7 +161,7 @@ describe("Question2: Liquidation in 2000,5000,10000 USDT", function () {
     expect(profit.gt(BigNumber.from(0)), "not profitable").to.be.true;
   });
   it("TEST 10,000 USDT", async function (input = "10000") {
-    // console.log(process.env.ALCHE_API)
+    console.log("\nLiquidation 10,000 USDT");
     await network.provider.request({
       method: "hardhat_reset",
       params: [
